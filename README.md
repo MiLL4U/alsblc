@@ -43,7 +43,7 @@ This prioritizes points where the spectrum falls below the baseline $(y_i < z_i)
 
 The first term of $F(\mathbf{Z})$ represents the difference between the spectrum and the baseline, while the second term serves as a penalty term representing the complexity of the baseline curve, with the constant $\lambda$ determining its scale. Setting $\lambda$ to a small value yields a complex baseline curve, while a large value yields a smooth baseline curve.
 ### References
-P.H.C. Eilers, _Anal. Chem._, **2004**, _76_, 404-411.
+[P.H.C. Eilers, _Anal. Chem._, **2004**, _76_, 404-411.](https://pubs.acs.org/doi/10.1021/ac034800e)
 
 ## Algorithm
 The algorithm for baseline calculation using ALS is as follows. First, initialize all the weights $\mathbf{w}=\lbrace w_1, w_2, \cdots, w_n \rbrace$ to 1. Then update the baseline $\mathbf{Z}$ and weights $\mathbf{w}$ iteratively:
@@ -94,7 +94,7 @@ and thus, the baseline $\mathbf{Z}$ is given by:
 \mathbf{Z} = (\mathbf{W} + \lambda \mathbf{D}^T\mathbf{D})^{-1}\mathbf{WY}
 ```
 ### References
-P.H.C. Eilers, _Anal. Chem._, **2003**, _75_, 3631-3636.
+[P.H.C. Eilers, _Anal. Chem._, **2003**, _75_, 3631-3636.](https://pubs.acs.org/doi/10.1021/ac034173t)
 
 
 ## Installation
