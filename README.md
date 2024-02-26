@@ -94,4 +94,11 @@ and thus, the baseline $\mathbf{Z}$ is given by:
 \mathbf{Z} = (\mathbf{W} + \lambda \mathbf{D}^T\mathbf{D})^{-1}\mathbf{WY}
 ```
 ### References
+
 [P.H.C. Eilers, _Anal. Chem._, **2003**, _75_, 3631-3636.](https://pubs.acs.org/doi/10.1021/ac034173t)
+
+
+## Installation
+
+## Usage
+
