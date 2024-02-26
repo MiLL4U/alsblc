@@ -14,17 +14,26 @@ if __name__ == '__main__':
     PARAM_LAMBDA = 100000
     PARAM_P = 0.001
     PARAM_ITERATION = 10
-    TEST_SIZE = 1000
+    TEST_SIZE = 200
 
     spectrum = np.load("./test/example.npy")
 
-    test_size = 1000
-    spectra = make_test_data(spectrum, test_size)
+    spectra = make_test_data(spectrum, TEST_SIZE)
     als_eigen = ALSBaselineCorrection(
         PARAM_LAMBDA, PARAM_P, PARAM_ITERATION)
-    print(f"Eigen multi ({test_size} spectra):")
+    print(f"Eigen single ({TEST_SIZE} spectra):")
+    dt_start = datetime.datetime.now()
+    for spectrum in spectra:
+        baseline = als_eigen.get_baseline(spectrum)
+    dt_delta = datetime.datetime.now() - dt_start
+    time_single = dt_delta / TEST_SIZE
+    print(time_single, "s/spectrum\n")
+
+    als_eigen = ALSBaselineCorrection(
+        PARAM_LAMBDA, PARAM_P, PARAM_ITERATION)
+    print(f"Eigen multi ({TEST_SIZE} spectra):")
     dt_start = datetime.datetime.now()
     baselines = als_eigen.get_baselines(spectra)
     dt_delta = datetime.datetime.now() - dt_start
-    time_single = dt_delta / test_size
+    time_single = dt_delta / TEST_SIZE
     print(time_single, "s/spectrum\n")
