@@ -5,8 +5,6 @@ project(${MODULE_NAME})
 
 add_subdirectory(pybind11)
 include_directories(${PROJECT_SOURCE_DIR}/include)
-add_executable(main src/main.cpp)
-add_executable(test src/test.cpp src/asymleastsquare.cpp)
 pybind11_add_module(${MODULE_NAME} src/asymleastsquare.cpp src/asymleastsquare_wrap.cpp)
 
 # EXAMPLE_VERSION_INFO is defined by setup.py and passed into the C++ code as a
