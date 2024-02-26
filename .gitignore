@@ -161,3 +161,6 @@ cython_debug/
 
 # C++ includes
 include/Eigen/
+
+# development enviroment
+.vscode/
