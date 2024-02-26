@@ -1,7 +1,5 @@
 #ifndef _ASYMLEASTSQUARE_HPP_
 #define _ASYMLEASTSQUARE_HPP_
-#ifndef _ASYMLEASTSQUARE_HPP_
-#define _ASYMLEASTSQUARE_HPP_
 
 #include <Eigen/Dense>
 #include <Eigen/SparseCholesky>
@@ -46,8 +44,5 @@ class AsymmetricLeastSquares {
     Eigen::VectorXd get_baseline(const Eigen::VectorXd &spectrum);
     Eigen::MatrixXd get_baselines(const Eigen::MatrixXd &spectra);
 };
-
-#endif /* _ASYMLEASTSQUARE_HPP_ */
-
 
 #endif /* _ASYMLEASTSQUARE_HPP_ */
