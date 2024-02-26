@@ -3,6 +3,11 @@ Baseline correction using asymmetric least squares, accelerated with C++.
 
 Asymmetric least squares method is a technique that can correct the baseline while adjusting the balance between the **fit** of the baseline to the spectrum and the **smoothness** of the baseline curve.
 
+## Dependencies
+- [Eigen](https://eigen.tuxfamily.org/) (C++ template library for linear algebra)
+- [pybind11](https://github.com/pybind/pybind11) (Seamless operability between C++11 and Python)
+- [NumPy](https://numpy.org/) (Fundamental package for scientific computing with Python)
+
 ## Principle
 In ALS, the baseline
 $\mathbf{Z}=\lbrace z_1, z_2, \cdots, z_n \rbrace$
@@ -59,7 +64,7 @@ w_i\leftarrow\left\{
 \end{array}
 ```
  until convergence.
- 
+
 $F(\mathbf{Z})$ can be expressed using matrices and vectors as:
 ```math
 F(\mathbf{Z}) = (\mathbf{Y}-\mathbf{Z})^T\mathbf{W}(\mathbf{Y}-\mathbf{Z}) +
