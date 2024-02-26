@@ -1,4 +1,4 @@
-# Asynmetric Least Squares Baseline Correction
+# Asymmetric Least Squares Baseline Correction
 Baseline correction using asymmetric least squares, accelerated with C++.
 
 Asymmetric least squares method is a technique that can correct the baseline while adjusting the balance between the **fit** of the baseline to the spectrum and the **smoothness** of the baseline curve.
