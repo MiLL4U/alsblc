@@ -1,7 +1,5 @@
 #ifndef _DIFF_HPP_
 #define _DIFF_HPP_
-#ifndef _EIGEN_DIFF_H_
-#define _EIGEN_DIFF_H_
 
 #include <Eigen/Dense>
 #include <Eigen/SparseCore>
@@ -52,8 +50,5 @@ const typename Derived::PlainObject Diff(  // for sparse matrix
 
     return res;
 }
-
-#endif /* _EIGEN_DIFF_H_ */
-
 
 #endif /* _DIFF_HPP_ */
