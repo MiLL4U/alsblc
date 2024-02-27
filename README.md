@@ -1,7 +1,7 @@
 # Asymmetric Least Squares Baseline Correction
 Baseline correction using asymmetric least squares, accelerated with C++.
 
-Asymmetric least squares method is a technique that can correct the baseline while adjusting the balance between the **fit** of the baseline to the spectrum and the **smoothness** of the baseline curve.
+Asymmetric least squares is a technique that can correct the baseline while adjusting the balance between the **fit** of the baseline to the spectrum and the **smoothness** of the baseline curve.
 
 ## Dependencies
 - [Eigen](https://eigen.tuxfamily.org/) (C++ template library for linear algebra)
@@ -9,7 +9,7 @@ Asymmetric least squares method is a technique that can correct the baseline whi
 - [NumPy](https://numpy.org/) (Fundamental package for scientific computing with Python)
 
 ## Principle
-In ALS, the baseline
+In asymmetric least squares (ALS), the baseline
 $\mathbf{Z}=\lbrace z_1, z_2, \cdots, z_n \rbrace$
 for the spectrum
 $\mathbf{Y}=\lbrace y_1, y_2, \cdots, y_n \rbrace$
